@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario CRUD de Productos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex justify-center items-center h-screen">
+  <div class="bg-white shadow-md rounded px-8 py-6 w-full max-w-md">
+    <h2 class="text-2xl font-bold text-center mb-6 text-gray-700">Gestión de Productos</h2>
+    <form action="producto.php" method="POST">
+      
+      <!-- ID Producto -->
+      <div class="mb-4">
+        <label for="id_producto" class="block text-gray-600 font-medium mb-2">ID Producto</label>
+        <input type="number" id="id_producto" name="id_producto" 
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+               placeholder="Ingresa el ID del producto">
+      </div>
+
+      <!-- Nombre Producto -->
+      <div class="mb-4">
+        <label for="nombre_producto" class="block text-gray-600 font-medium mb-2">Nombre del Producto</label>
+        <input type="text" id="nombre_producto" name="nombre_producto" 
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+               placeholder="Ingresa el nombre del producto">
+      </div>
+
+      <!-- Lote Producto -->
+      <div class="mb-4">
+        <label for="lote_producto" class="block text-gray-600 font-medium mb-2">Lote del Producto</label>
+        <input type="text" id="lote_producto" name="lote_producto" 
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+               placeholder="Ingresa el lote del producto">
+      </div>
+
+      <!-- Precio Producto -->
+      <div class="mb-4">
+        <label for="precio" class="block text-gray-600 font-medium mb-2">Precio del Producto</label>
+        <input type="number" step="0.01" id="precio" name="precio" 
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:outline-none"
+               placeholder="Ingresa el precio del producto">
+      </div>
+
+      <!-- Botones CRUD -->
+      <div class="grid grid-cols-2 gap-4">
+        <button 
+            type="submit" 
+            name="accion" 
+            value="create" 
+            class="w-full bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none">
+            Crear
+        </button>
+        <button 
+            type="submit" 
+            name="accion" 
+            value="read" 
+            class="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none">
+            Buscar
+        </button>
+        <button 
+            type="submit" 
+            name="accion" 
+            value="update" 
+            class="w-full bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded focus:outline-none">
+            Actualizar
+        </button>
+        <button 
+            type="submit" 
+            name="accion" 
+            value="delete" 
+            class="w-full bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded focus:outline-none">
+            Eliminar
+        </button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

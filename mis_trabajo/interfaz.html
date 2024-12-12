@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('https://www.pixel4k.com/wp-content/uploads/2020/05/colorful-gradient-abstract-4k_1589567785.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gradient-to-r from-indigo-500 to-blue-600 text-white">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="bg-white p-10 rounded-xl shadow-lg max-w-3xl w-full text-center space-y-8">
+            <h1 class="text-4xl font-extrabold text-gray-900 mb-6">Bienvenid@s</h1>
+            <p class="text-lg text-gray-600 mb-6">Elige dode qieres ir:</p>
+            <!-- Contenedor para los botones en fila -->
+            <div class="flex justify-center space-x-6">
+                <a href="usuario.html" class="bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-xl text-lg transition duration-300 transform hover:scale-105">
+                          usuario
+                </a>
+                <a href="Producto.html" class="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded-xl text-lg transition duration-300 transform hover:scale-105">
+                    Gestión de Productos
+                </a>
+                <a href="factura.html" class="bg-yellow-600 hover:bg-yellow-700 text-white py-3 px-6 rounded-xl text-lg transition duration-300 transform hover:scale-105">
+                    Gestión de Facturas
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
